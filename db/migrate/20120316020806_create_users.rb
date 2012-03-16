@@ -6,6 +6,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :birthday
 
+	  t.references :rols
+
       t.timestamps
     end
   end

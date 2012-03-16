@@ -3,6 +3,8 @@ class CreateRols < ActiveRecord::Migration
     create_table :rols do |t|
       t.string :description
 
+      t.references :users
+
       t.timestamps
     end
   end
